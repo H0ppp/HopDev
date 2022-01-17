@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: y mandatory;
+}
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
+body {
+    background-color: #000000;
+    color: white;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    font-family: Raleway;
+    margin: 0;
+}
+
+a, a:visited, a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.headerbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 75px;
+    float: left;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 185, 255, 0.44);
+    z-index: 3;
+}
+
+    .headerbar.scrolled {
+        opacity:1;
+        background-color: rgb(0, 185, 255);
+        -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.25);
+    }
+
+#title {
+    margin-top: 13px;
+    margin-left: 8px;
+}
+
+
+.navbar {
+    display: inline;
+    float: right;
+    margin-top: 2%;
+}
+
+ul#nav {
+    display: inline;
+    list-style-type: none;
+    font-size: larger;
+}
+
+ul, li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.navBarItem > a:hover {
+    animation: fadingMenu 0.2s;
+    -webkit-animation: fadingMenu 0.2s;
+    -moz-animation: fadingMenu 0.2s;
+    -o-animation: fadingMenu 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.active {
+    animation: fadingMenu 0.2s;
+    -webkit-animation: fadingMenu 0.2s;
+    -moz-animation: fadingMenu 0.2s;
+    -o-animation: fadingMenu 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#mainPage {
+}
+
+.pageSection {
+    scroll-snap-align: start;
+    height: 100vh;
+    padding-top: 8vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#home {
+}
+
+#welcomeBox {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    filter: drop-shadow(16px 16px 10px black);
+}
+
+#about {
+    background-color: #808080;
+    background-image: url(../img/golf.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.anim {
+    opacity: 0;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.tracker {
+    opacity: 0;
+}
+
+#work {
+    background-color: #a09f9f;
+    background-image: url(../img/engine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+#contactBox {
+    background-color: rgba(0, 185, 255, 0.44);
+    margin-top: 25vh;
+    margin-left: 30%;
+    width: 40%;
+    height: 40vh;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    border-color:white;
+    border-style: solid;
+    color: white;
+}

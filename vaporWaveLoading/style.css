@@ -1,0 +1,23 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    font-family: Raleway;
+    color:white;
+}
+
+#main {
+    margin-top: 20vh;
+    align-content: center;
+    text-align: center;
+    width:60%;
+    margin-left:20%;
+}
+
+#divide {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: white;
+}

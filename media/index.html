@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="HOP_MEDIA">
+    <meta name="description" content="Automotive Photography & Cinematography">
+    <meta name="author" content="Jake Hopkins">
+
+    <title>HOP_MEDIA</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://hopdev.co.uk/assets/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="https://hopdev.co.uk/assets/css/animation.css">
+    <script src="https://hopdev.co.uk/assets/js/active-menu-link.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://hopdev.co.uk/assets/js/active-header.js"></script>
+    <script src="https://hopdev.co.uk/assets/js/intersectObserver.js"></script>
+    <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+</head>
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '658189318874496',
+                xfbml: true,
+                version: 'v12.0'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header class="headerbar">
+        <a href="#"><img id="title" src="img/logoSmall.png" /></a>
+        <nav class="navbar">
+            <ul id="nav">
+                <li data-menuanchor="home" class="navBarItem"><a class="" href="#home">Home</a></li>
+                <li data-menuanchor="about" class="navBarItem"><a class="" href="#about">About</a></li>
+                <li data-menuanchor="work" class="navBarItem"><a class="" href="#work">Work</a></li>
+                <li data-menuanchor="contact" class="navBarItem"><a class="" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <script type="module">
+            import ActiveMenuLink from "https://hopdev.co.uk/assets/js/active-menu-link.js";
+
+            let options = {
+                activeClass: "active"
+            };
+
+            new ActiveMenuLink(".navbar", options);</script>
+    </header>
+    <div class="mouse_scroll">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div>
+            <span class="m_scroll_arrows one"></span>
+            <span class="m_scroll_arrows two"></span>
+            <span class="m_scroll_arrows three"></span>
+        </div>
+    </div>
+    <div id="mainPage">
+        <div id="home" class="pageSection">
+            <div id="homeTrack" class="tracker">
+                <div id="welcomeBox">
+                    <img id="logo" src="img/hopmedia.png" />
+                </div>
+            </div>
+        </div>
+        <div id="about" class="pageSection">
+            <h1><u>About</u></h1>
+            <div id="aboutTrack" class="tracker">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vehicula posuere hendrerit. Donec sed fermentum augue. Praesent sapien lacus, posuere vitae risus sit amet, mattis suscipit erat. Praesent venenatis nibh lectus. Vivamus at volutpat metus. Nullam tincidunt ornare nisl in hendrerit. Proin sapien lectus, imperdiet eget odio eget, egestas lobortis tortor. Quisque mi ipsum, mattis eget dapibus in, eleifend et quam. Integer pulvinar quam ac nisl pharetra, ut tempus magna finibus. Praesent tristique imperdiet tincidunt. Nullam semper ipsum eu pharetra volutpat. Phasellus sodales tempor velit id accumsan.
+                </p>
+            </div>
+        </div>
+        <div id="work" class="pageSection">
+            <h1><u>Work</u></h1>
+            <div id="workTrack" class="tracker">
+                <p>
+                    Duis sagittis felis eu eleifend placerat. Praesent nisl dolor, porta sed magna vel, feugiat commodo mauris. Curabitur et velit elit. Curabitur luctus, ligula eu interdum pellentesque, nibh risus malesuada sem, a convallis tortor lacus at sapien. Quisque a leo eros. Quisque malesuada metus vehicula purus placerat tempor. Maecenas hendrerit sed dui nec vehicula. Phasellus sit amet ultricies arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </p>
+            </div>
+        </div>
+        <div id="contact" class="pageSection">
+            <div id="contactTrack" class="tracker">
+                <div id="contactBox">
+                    <br />
+                    <br />
+                    <h1><u>Contact</u></h1>
+                    <span>jake@jakehopkins.xyz</span>
+                    <br />
+                    <br />
+                    <span>Discord: Hop#8403</span>
+                    <br />
+                    <div class="fb-like"
+                         data-share="true"
+                         data-width="450"
+                         data-show-faces="true">
+                    </div>
+                    <br />
+                    <br />
+                    <p>&copy; Jake Hopkins 2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
