@@ -35,7 +35,6 @@ body, html {
     margin-right: 25%;
     margin-left: 25%;
     margin-top: 5%;
-    height: 65%;
     min-height: 32em;
     min-width: 32em;
     opacity: 0;
@@ -45,6 +44,7 @@ body, html {
     -o-animation: fadeIn 1s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+    padding: 5px;
 }
 
 #credit {
