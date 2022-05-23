@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Hop_Spawnmenu ReadME</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900">
+		<link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div id="main">
+            <u><h1 id="hop_spawnmenu">Hop_SpawnMenu</h1></u>
+            <p>Thank you for purchasing my resource, all the information you should need for setup/config should be available in this document but if you need more help please contact me on discord: hop#8403.</p>
+            <hr/>
+                <u><h2 id="installation">Installation</h2></u>
+                <ul>
+                    <li>Place hop_spawnmenu in your resources folder.</li>
+                    <li>Add <span id="code"> start hop_spawnmenu </span>  to your server.cfg</li>
+                </ul>
+            <hr/>
+            <u><h2 id="setup">Setup</h2></u>
+                <p>Setup can take some time depending on how your server operates, if you encounter any issues feel free to contact me.</p>
+                <u><h3 id="esx-multi-character">ESX Multi Character</h3></u>
+                <p>One line of code must be added to allow the spawnmenu to open at the right time.</p>
+                <p><strong>esx_multicharacter/client/main.lua</strong></p>
+                <ul>
+                    <li>Line 296/297: <span id="code"> Must be commented out (add "--" infront) </span></li>
+                    <li>Line 298: <span id="code"> TriggerEvent('hop_spawnmenu:setNui') </span></li>
+                </ul>
+                <p><img src="https://user-images.githubusercontent.com/58856669/166466207-691e4202-29d9-434c-9509-454452a50213.png" alt="mesx" /></p>
+                <u><h3 id="esx-single-character">ESX Single Character</h3></u>
+                <p>For single character ESX, 2 lines of code must be added to lua files within the esx_identity and esx_skin resources.</p>
+                <p><strong>esx_identity/client/main.lua</strong></p>
+                <ul>
+                <li>Line 5: <span id="code"> TriggerEvent("hop_spawnmenu:setNui") </span></li>
+                </ul>
+                <p><img src="https://user-images.githubusercontent.com/58856669/166459167-de6b058d-3298-4c01-8b7f-a94eb7011e75.png" alt="SESX_identity" /></p>
+                <p><strong>esx_skin/client/main.lua</strong></p>
+                <ul>
+                <li>Line 234: <span id="code"> TriggerEvent("hop_spawnmenu:setNui") </span></li>
+                </ul>
+                <p><img src="https://user-images.githubusercontent.com/58856669/166466758-39cf1f20-a9b8-411e-99e6-cfab43044914.png" alt="SESX_skin" /></p>
+                <u><h3 id="standalone">Standalone</h3></u>
+                <p>Ensure Config.isStandAlone is set to <span id="code">true</span> in the config.lua file.</p>
+            <hr/>
+            <u><h2 id="configuration">Configuration</h2></u>
+                <u><h3 id="locations">Locations</h3></u>
+                <iframe src="https://streamable.com/e/b4haz1" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                <u><h4>Commands</h4></u>
+                <ul>
+                    <li>spawnmenu: Opens the spawnmenu</li>
+                    <li>spawnmenulocation: Prints your current vector3 coords in console</li>
+                    <li>spawnmenudebug: Creates a placeable marker on the map and gives the user the X and Y Coords of the marker.</li>
+                </ul>
+                <u><h3 id="seamless-loading">Seamless Loading</h3></u>
+                <u><h4 id="esx">ESX</h4></u>
+                <p>To acheive seamless loading with ESX, add <span id="code">loadscreen_manual_shutdown "yes"</span> to the fxmanifest.lua of your loading screen resource. ESX will then terminate the loading screen automatically at the correct time.</p>
+                <u><h4 id="standalone-1">Standalone</h4></u>
+                <p>To acheive seamless loading on standalone, follow <a href="https://forum.cfx.re/t/how-to-remove-the-bridge-using-a-new-or-existing-loading-screen-resource/798407">this</a> tutorial initially. <br/>
+                After that, replace all the code in the new client.lua with: <br/>
+                <div id="pcode">RegisterNetEvent("loading_screen:endLoad")<br/>AddEventHandler("loading_screen:endLoad", function()<br/>    ShutdownLoadingScreenNui()<br/>end)<br/>
+                </div>
+                <br/>
+                Finally, ensure Config.manualLoadEnabled is set to <span id="code">true</span>. </p>
+            <hr/>
+            <p>&copy; Jake Hopkins 2022 <br/> <a href="http://fivem.hopdev.co.uk">http://fivem.hopdev.co.uk</a> <br/> Discord: Hop#8403</p>
+        </div>
+    </body>
+</html>

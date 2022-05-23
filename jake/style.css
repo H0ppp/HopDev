@@ -1,0 +1,131 @@
+body, html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background-color:black;
+    font-family: raleway;
+    overflow: hidden;
+    color: white;
+}
+
+#terminal {
+    width: 40%;
+    height: 40%;
+    min-width: 40%;
+    min-height: 40%;
+    left: 20%;
+    top: 15%;
+}
+
+#about {
+    width: 30%;
+    height: 50%;
+    min-width: 30%;
+    min-height: 40%;
+    left: 65%;
+    top: 10%;
+}
+
+.windowContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #787878;
+    resize: both;
+    overflow: hidden;
+    z-index: 1;
+    background-color: black;
+}
+
+.windowHeader {
+    background-color: #787878;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    position: sticky;
+    top: 0;
+    min-height: 25px;
+    z-index: 2;
+}
+
+.windowBody {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/*Background */
+#background {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    animation: animatedBackground 3s alternate infinite;
+    -webkit-animation: animatedBackground 3s alternate infinite;
+    -moz-animation: animatedBackground 3s alternate infinite;
+    -o-animation: animatedBackground 3s alternate infinite;
+}
+
+
+/*Social Links */
+.socialImg {
+    width: 60%;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+    .socialImg:hover {
+        opacity: 0.5;
+    }
+
+#socials {
+    display:flex;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 3%;
+}
+
+/*Close Button*/
+#close {
+	position: absolute;
+    right: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+	opacity: 0.3;
+}
+
+#close:hover {
+	opacity: 1;
+}
+
+#close::before,
+#close::after {
+	position: absolute;
+	bottom: 0px;
+    left: 8px;
+    top: -1px;
+	content: ' ';
+	height: 22px;
+	width: 3px;
+	background-color: #333;
+}
+
+#close:before {
+	transform: rotate(45deg);
+}
+
+#close:after {
+	transform: rotate(-45deg);
+}

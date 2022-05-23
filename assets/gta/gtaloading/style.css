@@ -1,0 +1,89 @@
+body{
+    font-family: raleway;
+}
+
+#content {
+    display: inline-block;
+    left: 20%;
+    position: absolute;
+    top: 60%;
+}
+
+#text {
+    display: inline-block;
+}
+
+#title {
+    color: azure;
+}
+
+#sub {
+    color: #93dbe9;
+}
+
+#background {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    animation: animatedBackground 3s alternate infinite;
+    -webkit-animation: animatedBackground 3s alternate infinite;
+    -moz-animation: animatedBackground 3s alternate infinite;
+    -o-animation: animatedBackground 3s alternate infinite;
+    z-index: -10;
+}
+
+
+  @keyframes animatedBackground {
+    from {
+        filter: contrast(100%);
+    }
+
+    to {
+        filter: contrast(200%);
+    }
+}
+@-moz-keyframes animatedBackground {
+    from {
+        filter: contrast(100%);
+    }
+
+    to {
+        filter: contrast(200%);
+    }
+}
+
+@-webkit-keyframes animatedBackground {
+    from {
+        filter: contrast(100%);
+    }
+
+    to {
+        filter: contrast(200%);
+    }
+}
+@-o-keyframes animatedBackground {
+    from {
+        filter: contrast(100%);
+    }
+
+    to {
+        filter: contrast(200%);
+    }
+}
+@-ms-keyframes animatedBackground {
+    from {
+        filter: contrast(100%);
+    }
+
+    to {
+        filter: contrast(200%);
+    }
+}

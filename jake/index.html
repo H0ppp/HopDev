@@ -1,38 +1,45 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Jake Hopkins</title>
-    <meta name="title" content="Jake Hopkins" />
-    <meta name="description" content="Programmer // DJ // Photographer" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://hopdev.co.uk/assets/css/animation.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="title" content="Jake Hopkins">
+        <meta name="description" content="Software and Web developer">
+        <meta name="author" content="Jake Hopkins">
 
-<body>
-    <center>
+        <title>Jake Hopkins</title>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.3/js/jquery.terminal.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.33.3/css/jquery.terminal.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900">
+
+        <script src="main.js"></script>
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://hopdev.co.uk/assets/css/animation.css">
+    </head>
+    <body style="display: none">
         <div id="background"></div>
-        <div id="main">
-            <img id="logo" src="img/jake.png" />
-            <h3 id="tagline">Programmer // DJ // Photographer</h3>
-            <hr />
-            <ul id="menu">
-                <a href="http://fivem.hopdev.co.uk"><li class="mainList">FiveM Resources</li></a>
-                <a href="http://www.instagram.com/hop_media"><li class="mainList">Hop Media</li></a>
-                <a href="http://hopdev.co.uk"><li class="mainList">Hop DEV</li></a>
-                <a href="https://soundcloud.com/hopuk"><li class="mainList">Hop UK</li></a>
-            </ul>
-            <hr />
-            <p id="footer">&copy; Jake Hopkins 2022 <br /> jakehopkins.xyz</p>
-            <div id="socials">
+
+        <div class="windowContainer" id="terminal">
+            <div class="windowHeader" id="terminalHeader"><p id="title">Terminal</p></div>
+            <div class="windowBody" id="terminalBody"></div>
+        </div>
+        <div class="windowContainer" id="about">
+            <div class="windowHeader" id="aboutHeader">
+                <p id="title">About</p>
+                <button type="button" id="close" onclick="CloseAbout()"></button>
+            </div>
+            <div class="windowBody" id="aboutBody">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+        <div id="socials">
             <a href="http://www.facebook.com/jakehopkins277"><img class="socialImg" src="img/facebook256.png" lin=""></a>
             <a href="http://www.instagram.com/jhop277"><img class="socialImg" src="img/insta256.png"></a>
             <a href="mailto:jake@jakehopkins.xyz"><img class="socialImg" src="img/email256.png"></a>
             <a href="http://www.twitter.com/jhop277"><img class="socialImg" src="img/twitter256.png"></a>
             <a href="http://www.linkedin.com/in/jakehopkins22"><img class="socialImg" src="img/linkedin256.png"></a>
-            </div>
         </div>
-            <div id="credit"><a href="https://www.wallpaperflare.com/outrun-vaporwave-wallpaper-gjedg/download/1920x1080">Image Source</a></div>
-    </center>
-</body>
+    </body>
 </html>
